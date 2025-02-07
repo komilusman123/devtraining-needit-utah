@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8fa93b3583af5210a9b3b755eeaad3a1" label="Occasions" max_length="40" name="x_58872_needit_occasions" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type of Occasion" max_length="40" name="type_of_occasion" type="choice">
+            <choice/>
+        </element>
+        <element label="Date of Occasion" max_length="40" name="date_of_occasion" type="glide_date"/>
+        <index name="index">
+            <element name="employee"/>
+        </index>
+    </element>
+</database>
